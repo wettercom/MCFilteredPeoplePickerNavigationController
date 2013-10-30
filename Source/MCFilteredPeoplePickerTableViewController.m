@@ -51,8 +51,6 @@
                 [UIAlertView showWithTitle:NSLocalizedString(@"user_rejected_access_to_addressbook", @"Message shown when the user has previously rejected access. He'll have to go in the settings.")];
                 return nil;
             }
-        } else {    // we're on iOS 5
-            ab = ABAddressBookCreate();
         }
         if (error) {
             NSLog(@"ABAddressBookCreateWithOptions returned error code %ld", CFErrorGetCode(*error));
