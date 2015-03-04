@@ -150,7 +150,7 @@
         }
         CFRelease(multiValue);
     } else {
-        DLogI(indexPath.row); // Hint to the developer that something wrong happened.
+        DLogL((long)indexPath.row); // Hint to the developer that something wrong happened.
     }
 }
 
